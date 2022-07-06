@@ -1,2 +1,9 @@
 # Admin-Dashboard
-https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
+
+![image](../Screenshot%202022-07-06%20at%2012.49.04%20PM%20copy.png)
+
+Live Preview 👉 [Click Here](https://manikanta528.github.io/Admin-Dashboard/)
+
+## Used Languages 
+1. HTML 
+2. CSS

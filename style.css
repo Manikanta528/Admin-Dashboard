@@ -23,7 +23,7 @@ body{
 }
 
 .side-bar,header,main{
-    border: 2px solid black;
+    /* border: 2px solid black; */
 
 }
 .side-bar{
@@ -36,6 +36,7 @@ header{
 }
 main{
     grid-area: main;
+    background-color: #dae9fb;
 }
 .side-bar > .title{
     font-weight: 700;
@@ -54,7 +55,7 @@ main{
     padding-top: 6px;
 }
 .nav-main{
-    margin-top: 24px;
+    margin-top: 8px;
     font-size: 1rem;
     font-weight: 500;
     padding-left: 32px;
@@ -69,4 +70,51 @@ main{
 }
 .nav-main-text{
     padding-top: 2px;
+}
+.header-top{
+    margin: 16px 24px;
+    display: grid;
+    grid-template: 1fr / 0.1fr 7fr 1.1fr  0.1fr 1fr;
+    align-items: center;
+    gap: 24px;
+}
+
+.profile-name{
+    font-size: 22px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+input[type="text"]{
+    padding: 8px;
+    border: none;
+    background-color: #dae9fb;
+    border-radius: 12px;
+}
+.header-down{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 0.45fr 3fr  2fr;
+    align-items: center;
+    padding-top: 5px;
+}
+.image{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    gap: 24px;
+    
+}
+.buttons > button{
+    background-color: var(--primary-color);
+    border-radius: 18px;
+    color: white;
+    height: 40px;
+    font-weight: 700;
+    width: 110px;
+    border: none;
+
 }

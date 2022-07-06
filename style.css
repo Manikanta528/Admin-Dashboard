@@ -30,6 +30,7 @@ body{
     grid-area: sidebar;
     background-color: var(--primary-color);
     color: white;
+    z-index: 2;
 }
 header{
     grid-area: header;
@@ -71,6 +72,10 @@ main{
 .nav-main-text{
     padding-top: 2px;
 }
+header{
+    box-shadow: 0px 0.3px 20px #d2d2d2;
+    z-index: 1;
+}
 .header-top{
     margin: 16px 24px;
     display: grid;
@@ -90,6 +95,7 @@ input[type="text"]{
     border: none;
     background-color: #dae9fb;
     border-radius: 12px;
+    box-shadow: 0px 12px 24px 0 rgba(0,0,0,0.05);
 }
 .header-down{
     /* border: 1px solid red; */
@@ -116,5 +122,82 @@ input[type="text"]{
     font-weight: 700;
     width: 110px;
     border: none;
-
+    box-shadow: 0px 12px 24px 0 rgba(0,0,0,0.16);
+}
+.section1,.section2{
+    /* border: 2px solid black; */
+    padding: 24px ;
+    
+}
+.section{
+    display: grid;
+    grid-template-columns: 6fr 2.6fr;
+    grid-template-rows: 645px;
+}
+h4{
+    margin-bottom: 8px;
+    font-weight: 450;
+}
+.section1-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    gap: 24px;
+}
+.card{
+    background-color: white;
+    height: 174px;
+    width: auto;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 0.1fr auto;
+    box-shadow: 0px 12px 24px 0 rgba(0,0,0,0.16);
+}
+.card-strip-color{
+    background-color: #fc4784;
+    height: inherit;
+    width: 6px;
+    border-radius: 12px 0px 0px 12px;    
+}
+.card-text{
+    margin: 24px 16px 8px 24px;
+    display: flex;
+    flex-direction: column;
+}
+.card-text > p, .board-items > p{
+    margin-top: 4px;
+    color: #ababab;
+    font-size: 12px;
+    overflow: hidden;
+    
+}
+.card-icons{
+    display: grid;
+    grid-template-columns: 24px 24px 24px;
+    grid-template-rows: 24px;
+    gap: 12px;
+    margin: 24px 0px 0px 0px;
+    justify-content: end; 
+}
+.section2{
+    padding-left: 0;
+}
+.annou-board{
+    background-color: white;
+    height: 280px;
+    width: auto;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0px 12px 24px 0 rgba(0,0,0,0.16);
+}
+hr{
+    margin: 12px 0px;
+}
+.trending{
+    background-color: white;
+    height: 234px;
+    width: auto;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0px 12px 24px 0 rgba(0,0,0,0.16);
 }
